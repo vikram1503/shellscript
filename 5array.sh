@@ -1,6 +1,6 @@
 #! /bin/bash
 
-tiles =("white" "black" "cream")
+tiles=("white" "black" "cream")
 
 echo "flooring tile is:${tiles[0]}"
 echo "steps tile is:${tiles[1]}"
