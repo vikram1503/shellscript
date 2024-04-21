@@ -8,7 +8,7 @@ echo "home directory:$HOME"
 echo "user:$USER"
 echo "hostname:$hostname"
 echo "process id:$$"
-sleep 30
+sleep 30 &
 echo "process id of last background command:$!"
 
 
