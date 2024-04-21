@@ -7,5 +7,6 @@ echo "current directory:$PWD"
 echo "home directory:$HOME"
 echo "user:$USER"
 echo "hostname:$hostname"
-echo "prcoss id: $$"
+echo "prcoss id:$$"
+
 
