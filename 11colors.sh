@@ -32,7 +32,9 @@ fi
 
 dnf install mysql -y &>>$logfile 
 validate $? "installing mysql"
+
  dnf install git -y &>>$logfile 
 validate $? "installing git"
-dnf install dockerr -y
+ 
+dnf install dockerr -y &>>$logfile
 validate $? "installing docker"
