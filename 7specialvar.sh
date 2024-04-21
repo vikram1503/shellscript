@@ -6,4 +6,5 @@ echo "script name: $0"
 echo "current directory:$PWD"
 echo "home directory:$HOME"
 echo "user:$USER"
-echo "hostname:$HOST"
+echo "hostname:$hostname"
+
