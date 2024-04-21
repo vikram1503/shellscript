@@ -7,6 +7,8 @@ logfile=/tmp/$scriptname-$timestamp.log
 r="\e[31m"
 g="\e[32m"
 n="\e[0m"
+echo "script started executing at:$timestamp"
+
   
 validate(){
 
