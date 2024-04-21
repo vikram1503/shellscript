@@ -4,6 +4,7 @@ userid=$(id -u)
 if [ $userid -ne 0 ]
 then
 echo "pls run this script using root access"
+exit 1
 else
 echo "you are super user"
 fi
