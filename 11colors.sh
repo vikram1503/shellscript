@@ -34,3 +34,5 @@ dnf install mysql -y &>>$logfile
 validate $? "installing mysql"
  dnf install git -y &>>$logfile 
 validate $? "installing git"
+dnf install wrong -y
+validate $? "installing wrong"
