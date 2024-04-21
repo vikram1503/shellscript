@@ -8,6 +8,7 @@ validate(){
     exit 1
     else
     echo "$2 installation success"
+    fi
 }
 if [ $userid -ne 0 ]
 then
