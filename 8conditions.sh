@@ -1,4 +1,4 @@
-#! binbas
+# binbas
 
 number=$1
 
