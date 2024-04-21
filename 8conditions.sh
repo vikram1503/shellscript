@@ -1,4 +1,4 @@
- binbas
+#! /bin/bash
 
 number=$1
 
