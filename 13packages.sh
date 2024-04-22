@@ -8,6 +8,14 @@ r="\e[31m"
 g="\e[32m"
 y="\e[33m"
 n="\e[0m"
+
+validate(){
+    if [ $1 -ne 0 ]
+    then echo -e "$2...$r failure $n"
+    exit 1
+    else echo -e "$2...$g success $n"
+    fi
+}
 if [ $userid -ne 0 ]
 then 
 echo "you are not super user get root access"
