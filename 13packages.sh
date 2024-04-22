@@ -11,5 +11,5 @@ fi
 
 for i in $@
 do
-echo "packages to install :$@"
+echo "packages to install :$i"
 done
