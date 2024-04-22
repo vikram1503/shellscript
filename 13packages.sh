@@ -8,7 +8,7 @@ r="\e[31m"
 g="\e[32m"
 y="\e[33m"
 n="\e[0m"
-if [ $userid -ne 0]
+if [ $userid -ne 0 ]
 then 
 echo "you are not super user get root access"
 exit 1
