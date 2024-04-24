@@ -1,6 +1,6 @@
 #!/bin/bash
 
-course="devops from current strip"
+course="aaaaaaa"
 
 echo "before calling other script:$course"
 echo "process id of current shellscript:$$"
