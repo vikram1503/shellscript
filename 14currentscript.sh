@@ -6,4 +6,4 @@ echo "before calling other script:$course"
 echo "process id of current shellscript:$$"
 
 #./15otherscript.sh
-echo "before calling other script:$course"
+echo "after calling other script:$course"
