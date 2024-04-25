@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 userid=$(id -u)
 if [ $userid -ne 0 ]
 then
