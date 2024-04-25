@@ -3,7 +3,7 @@ set -e
 failure(){
     echo "failed at $1: $2" 
 }
-trap 'failure ${lineno} "bash_command"' ERR
+trap 'failure ${lineno} "$bash_command"' ERR
 
 userid=$(id -u)
 if [ $userid -ne 0 ]
