@@ -1,11 +1,15 @@
 #! /bin/bash
+
 set -e
+
 failure(){
     echo "failed at $1: $2" 
 }
-trap 'failure ${lineno} "$bash_command"' ERR
+
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 userid=$(id -u)
+
 if [ $userid -ne 0 ]
 then
 echo "pls run this script using root access"
