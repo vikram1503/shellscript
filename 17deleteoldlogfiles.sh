@@ -7,7 +7,7 @@ g="\e[32m"
 y="\e[33m"
 n="\e[0m"
 
-if [ -d $source_directory]
+if [ -d $source_directory ]
 then
 echo -e "$g source directory exists$n"
 else
