@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 disk_usage=$(df -hT | grep xfs)
 disk_threshold=6
