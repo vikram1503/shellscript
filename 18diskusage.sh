@@ -1,0 +1,15 @@
+#! /bin/bash
+
+disk_usage=$(df -hT | grep xfs)
+disk_threshold=6
+
+while IFS= read -r line
+do
+   usage=$(echo $line | awk  -F " " '{print $6f}' | cut -d "%" -f1)
+   folder=$(echp $line | awk -F " " '{print $Nf}')
+if [ $usage -ge $disk_threshold ]
+then
+echo "$folder is more than $disk_threshold, current usage : $usage"
+fi
+
+done <<< $disk_usage
