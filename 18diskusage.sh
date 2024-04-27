@@ -10,7 +10,7 @@ do
    folder=$(echo $line | awk -F " " '{print $Nf}')
 if [ $usage -ge $disk_threshold ]
 then
- message= "$folder is more than $disk_threshold, current usage : $usage"
+ message+= "$folder is more than $disk_threshold, current usage : $usage"
 fi
 
 done <<< $disk_usage
