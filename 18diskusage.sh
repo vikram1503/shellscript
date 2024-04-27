@@ -14,4 +14,4 @@ then
 fi
 
 done <<< $disk_usage
-echo -e "Message: $message"
+echo -e "Message: $MESSAGE"
