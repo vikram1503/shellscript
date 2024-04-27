@@ -6,8 +6,8 @@ message=""
 
 while IFS= read -r line
 do
-   usage=$(echo $line | awk  -f " " '{print $6f}' | cut -d "%" -f1)
-   folder=$(echo $line | awk -f " " '{print $Nf}')
+   usage=$(echo $line | awk  -F " " '{print $6f}' | cut -d "%" -f1)
+   folder=$(echo $line | awk -F " " '{print $Nf}')
 if [ $usage -ge $disk_threshold ]
 then
  message= "$folder is more than $disk_threshold, current usage : $usage"
